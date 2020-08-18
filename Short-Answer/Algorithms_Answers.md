@@ -2,14 +2,14 @@
 
 ## Exercise I
 
-a)
+a) o(n)
 
 
-b)
+b) o(log(n))
 
 
-c)
+c) o(n)
 
 ## Exercise II
 
-
+I will use a binary search tree to determine the answer
