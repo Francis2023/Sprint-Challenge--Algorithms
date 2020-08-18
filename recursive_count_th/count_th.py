@@ -4,16 +4,19 @@ Your function should return a count of how many occurences of ***"th"*** occur w
 Your function must utilize recursion. It cannot contain any loops.
 '''
 def count_th(word):
-   
+    countNew = 0
+
     if len(word) < 2:
         count = 0
         return count
      
     elif word[0] == "t" and word[1] == "h":
-        count += 1
-        count_th(word[2:])
+            countNew += 1
+            count_th(word[1:])
+    
     else:
         count_th(word[1:])
-
+        
+    count = countNew
     return count
        

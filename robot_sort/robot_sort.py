@@ -98,13 +98,13 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        while True:
-            for i in range(0,len(self._list) - 1):
-            
-                if self._list[i] < self._list[i + 1]:
-                    self._list.append(self._list[i + 1])
-            
-            return False
+    
+        for i in range(len(self._list)):
+            for j in range(i + 1, len(self._list)):
+                if self._list[i] > self._list[j]:
+                    self._list[i], self._list[j] = self._list[j], self._list[i]
+        
+        print(self._list)
 
 
 
